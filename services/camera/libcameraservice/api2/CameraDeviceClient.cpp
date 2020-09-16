@@ -99,8 +99,8 @@ CameraDeviceClient::CameraDeviceClient(const sp<CameraService>& cameraService,
                 clientPid, clientUid, servicePid, overrideForPerfClass),
     mInputStream(),
     mStreamingRequestId(REQUEST_ID_NONE),
-    mRequestIdCounter(0),
-    mPrivilegedClient(false),
+    mRequestIdCounter(0) {
+    mPrivilegedClient = false;
     mOverrideForPerfClass(overrideForPerfClass) {
 
     char value[PROPERTY_VALUE_MAX];
